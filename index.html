@@ -98,6 +98,13 @@
   .gallery figcaption{font-size:13px;color:var(--muted);margin-top:8px;text-align:center}
   .pins{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
   .pins img{width:100%;height:auto;display:block;border-radius:2px;box-shadow:0 8px 22px rgba(11,31,58,.12);border:1px solid var(--line)}
+  .sample-week{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+  .sample-week article{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:20px 22px;display:flex;flex-direction:column;gap:8px}
+  .sample-week .meta{letter-spacing:.12em;text-transform:uppercase;font-weight:600;font-size:12px;color:var(--gold-dark);margin:0}
+  .sample-week h3{font-size:20px;margin:4px 0 0;color:var(--navy);font-weight:600;line-height:1.3}
+  .sample-week .format{font-size:13px;color:var(--muted);margin:0}
+  .sample-week .hook-label{letter-spacing:.12em;text-transform:uppercase;font-weight:600;font-size:11px;color:var(--gold-dark);margin:12px 0 0}
+  .sample-week .hook{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-size:17px;color:var(--navy);margin:0;line-height:1.45}
   .cta{background:var(--navy);color:var(--white);text-align:center;padding:56px 0}
   .cta h2{color:var(--white)}
   .cta h2::after{margin:12px auto 0}
@@ -113,12 +120,12 @@
     .hero .wrap{grid-template-columns:1fr;gap:26px;text-align:center}
     .hero img{max-width:260px;margin:0 auto}
     .hero h1{font-size:32px}
-    .gallery,.pins,.facts{grid-template-columns:1fr 1fr}
+    .gallery,.pins,.facts,.sample-week{grid-template-columns:1fr 1fr}
     body{font-size:16px}
     h2{font-size:26px}
   }
   @media (max-width:520px){
-    .gallery,.pins,.facts{grid-template-columns:1fr}
+    .gallery,.pins,.facts,.sample-week{grid-template-columns:1fr}
     .hero img{max-width:220px}
     .btn{width:100%;padding:16px 18px}
   }
@@ -163,6 +170,39 @@
     </ul>
     <p>The month is laid out in four weeks: introduce yourself, build trust, educate and connect, then convert. Topics include new-listing and just-sold posts, open house announcements, home-buying and home-selling tips, first-time buyer education, market-update posts (you add your own local numbers), FAQ answers, community highlights, behind-the-scenes Reels, and lead-generation offers you fulfill yourself.</p>
     <p>Anything that has to be a real fact &mdash; your name, city, listing details, client quotes, market statistics &mdash; is a <b>[PLACEHOLDER]</b> for you to fill in. The planner does not include made-up testimonials, listings, or statistics.</p>
+  </div>
+</section>
+
+
+<section>
+  <div class="wrap">
+    <h2>What a good week looks like</h2>
+    <div class="narrow">
+      <p>Week 1 of the planner is called Introduce Yourself. Here are three of those days, with the format, topic, and opening hook from the planner. You replace every <b>[PLACEHOLDER]</b> with your own details before you post.</p>
+    </div>
+    <div class="sample-week">
+      <article>
+        <p class="meta">Day 1</p>
+        <h3>Introduce yourself: who you are and who you help</h3>
+        <p class="format">Personal branding &middot; Image</p>
+        <p class="hook-label">Opening hook</p>
+        <p class="hook">Hi, I&rsquo;m [YOUR NAME], and I help people buy and sell homes in [CITY].</p>
+      </article>
+      <article>
+        <p class="meta">Day 2</p>
+        <h3>Get pre-approved before you start touring homes</h3>
+        <p class="format">Home-buying tips &middot; Carousel</p>
+        <p class="hook-label">Opening hook</p>
+        <p class="hook">Falling in love with a house you can&rsquo;t finance is the worst feeling.</p>
+      </article>
+      <article>
+        <p class="meta">Day 4</p>
+        <h3>7 simple fixes to make before you list</h3>
+        <p class="format">Home-selling advice &middot; Carousel</p>
+        <p class="hook-label">Opening hook</p>
+        <p class="hook">You don&rsquo;t need a full renovation to sell well. Start with these seven fixes.</p>
+      </article>
+    </div>
   </div>
 </section>
 
